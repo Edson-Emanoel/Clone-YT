@@ -1,0 +1,85 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      color: #FFF;
+      background-color: #000;
+}
+
+.container {
+      display: grid;
+      grid-template-columns: 200px;
+      grid-template-rows: 50px;
+      grid-template-areas: 
+      'MH' 'MH'
+      'AS' 'CT';
+      padding-left: 5px;
+}
+
+/* Header */
+
+.header {
+      width: 99vw;
+      grid-area: 'MH';
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: royalblue;
+}
+
+.header .logo {
+
+}
+
+.header .pesquisa {
+      display: flex;
+      justify-content: space-around;
+      background-color: transparent;
+      border: 1px solid #a6aec1;
+      border-radius: 40px;
+      width: 350px;
+}
+
+.header .pesquisa input {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: #FFF;
+      font-size: 18px;
+}
+
+.header .pesquisa button {
+      color: #FFF;
+      height: 30px;
+      border: none;
+      outline: none;
+      border-top-right-radius: 20px;
+      background-color: transparent;
+      border-bottom-right-radius: 20px;
+      border-left: 1px solid #a6aec1;
+}
+
+.header .outros {
+
+}
+
+/* Sidebar */
+
+.sidebar {
+      grid-area: 'AS';
+      width: 180px;
+      height: 100vh;
+      display: flex;
+      padding-left: 2px;
+      flex-direction: column;
+}
+
+.sidebar ul .principal, .sidebar ul .voce, .sidebar ul .inscricoes, .sidebar ul .categorias, .sidebar ul .mais_conteudo {
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #a6aec1;
+}
